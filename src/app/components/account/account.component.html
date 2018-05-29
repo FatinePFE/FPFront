@@ -1,0 +1,23 @@
+<div class="container">
+
+<form class="acc-form" #accountForm="ngForm">
+
+  <div class="form-row">
+    <div class="form-group">
+        <label for="username">User name</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username" placeholder="User name">
+
+    </div>
+
+    <div class="form-group">
+        <label for="fullName">Full name</label>
+        <input type="text" class="form-control" id="fullName" required [(ngModel)]="user.fullName" name="fullname" placeholder="Full Name">
+    </div>
+  </div>
+
+
+  <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
+
+</div>
