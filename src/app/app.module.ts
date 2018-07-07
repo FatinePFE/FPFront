@@ -1,35 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from "./services/auth.service";
 import {HttpModule} from "@angular/http";
-import {AccountService} from "./services/account.service";
-import { ProfileComponent } from './components/profile/profile.component';
 import {routing} from "./app.routing";
 import {FacebookModule} from "ngx-facebook";
 import {UrlPermission} from "./urlPermission/url.permission";
-import { AccountComponent } from './components/account/account.component';
+import { HomeComponent } from './components/home/home.component';
+import { PropositionComponent } from './components/proposition/proposition.component';
+import { ProposalControllerService } from './api/proposalController.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
-    ProfileComponent,
-    AccountComponent,
-
-
+    HomeComponent,
+    PropositionComponent
   ],
   imports: [
-    BrowserModule,HttpModule,FormsModule,routing, FacebookModule.forRoot(),
+    BrowserModule,HttpModule,FormsModule,routing, HttpClientModule, FacebookModule.forRoot(),
   ],
-  providers: [AuthService,AccountService,UrlPermission],
+  providers: [ProposalControllerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { User } from '../../model/model.user';
+/*import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { User } from '../../model/user';
 import { AccountService } from '../../services/account.service';
 import { Router } from '@angular/router';
 import { FormsModule, Validators } from '@angular/forms';
@@ -32,3 +32,4 @@ export class AccountComponent implements OnInit {
   }
 
 }
+*/

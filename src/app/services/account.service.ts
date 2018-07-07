@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*import { Injectable } from '@angular/core';
 import {User} from "../model/model.user";
 import {Http} from "@angular/http";
 import {AppComponent} from "../app.component";
@@ -25,3 +25,4 @@ export class AccountService {
   }
 
 }
+*/

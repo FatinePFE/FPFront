@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions,Response} from '@angular/http';
 import {User} from "../model/model.user";
 import 'rxjs/add/operator/map';
@@ -38,3 +38,4 @@ export class AuthService {
 
   }
 }
+*/
